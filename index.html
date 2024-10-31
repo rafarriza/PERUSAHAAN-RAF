@@ -11,7 +11,7 @@
     <!-- Header dan Navigasi -->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo Perusahaan"> <!-- Tambahkan gambar logo Anda -->
+            <img src="logo.png" alt="Logo RAFF Furniture">
             <h1>RAFF Company</h1>
         </div>
         <nav>
@@ -35,7 +35,7 @@
                 <div class="hero-text">
                     <h2>Rumah Impian Kini Menjadi Kenyataan</h2>
                     <p>Koleksi Terbaru</p>
-                    <button>Belanja Sekarang</button>
+                    <button onclick="shopNow()">Belanja Sekarang</button>
                 </div>
             </div>
         </section>
@@ -50,7 +50,7 @@
         <section id="layanan" class="section">
             <h2>Layanan Kami</h2>
             <div class="categories">
-                <div class="category">
+                <article class="category">
                     <h3>Meja</h3>
                     <ul>
                         <li>Meja Rias</li>
@@ -59,15 +59,15 @@
                         <li>Meja Tamu</li>
                         <li>Meja Tulis</li>
                     </ul>
-                </div>
-                <div class="category">
+                </article>
+                <article class="category">
                     <h3>Lemari</h3>
                     <ul>
                         <li>Lemari Anak</li>
                         <li>Lemari Pakaian</li>
                         <li>Lemari Serbaguna</li>
                     </ul>
-                </div>
+                </article>
             </div>
         </section>
 
@@ -95,9 +95,18 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 RAFF Furniture. Hak cipta dilindungi.</p>
+        <p>&copy; <span id="current-year"></span> RAFF Furniture. Hak cipta dilindungi.</p>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        function shopNow() {
+            // Add functionality for shopping now button
+            alert('Redirecting to shop page...');
+        }
+    </script>
 </body>
 </html>
