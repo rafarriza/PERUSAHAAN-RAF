@@ -1,97 +1,48 @@
-/* Reset dasar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Additional styles for body */
 body {
     font-family: Arial, sans-serif;
     color: #333;
+    background-color: #f9f9f9; /* Adding a light background color */
 }
 
 /* Header */
-header {
-    background-color: #003366;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+header nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
-header .logo img {
-    width: 50px;
-    margin-right: 10px;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 1.5rem;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu-toggle {
-    display: none;
-}
-
-.hero {
-    background-color: #f5f5f5;
-    text-align: center;
-    padding: 3rem 1rem;
-}
-
+/* Hero Section - Adjusting max-height */
 .hero img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
+    max-height: 400px; /* Increase max height for better visual impact */
 }
 
-.hero-text h2 {
-    color: #003366;
+/* Category styles - Add margin for better spacing */
+.category {
+    margin: 0 1rem; /* Add some margin around each category */
 }
 
-.section {
-    padding: 2rem;
-}
+/* Adding media queries for responsiveness */
+@media (max-width: 768px) {
+    .categories {
+        flex-direction: column; /* Stack categories on smaller screens */
+        align-items: center;
+    }
 
-.categories {
-    display: flex;
-    justify-content: space-around;
-}
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
 
-.category h3 {
-    color: #003366;
-}
+    header {
+        flex-direction: column; /* Stack logo and nav on mobile */
+        align-items: flex-start; /* Align items to the start */
+    }
 
-.category ul {
-    list-style-type: none;
-    margin-top: 0.5rem;
-}
+    header nav ul {
+        flex-direction: column; /* Stack nav links on mobile */
+        align-items: flex-start; /* Align to the start */
+    }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-.gallery-grid img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-/* Footer */
-footer {
-    background-color: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+    header nav ul li {
+        margin-left: 0; /* Reset margin for stacked layout */
+        margin-bottom: 1rem; /* Space out links */
+    }
 }
