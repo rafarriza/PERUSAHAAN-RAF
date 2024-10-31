@@ -1,30 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Name - Kontak</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <a href="index.html">Beranda</a>
-            <a href="profile.html">Profil</a>
-            <a href="services.html">Layanan</a>
-            <a href="gallery.html">Galeri</a>
-            <a href="contact.html">Kontak</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Kontak</h2>
-            <p>Hubungi kami untuk informasi lebih lanjut.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Perusahaan Anda. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Background untuk seluruh halaman */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    background-image: url('header-bg.jpg'); /* Ganti dengan URL gambar background */
+    background-size: cover;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    background-color: #fff; /* Background putih untuk area utama */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    background-image: url('footer-bg.jpg'); /* Ganti dengan URL gambar background */
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
