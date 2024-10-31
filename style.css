@@ -1,3 +1,4 @@
+/* Reset dasar */
 * {
     margin: 0;
     padding: 0;
@@ -7,143 +8,90 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f4f4f4;
 }
 
+/* Header */
 header {
+    background-color: #003366;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-image: url('header-bg.jpg'); /* Add background image to header */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
 }
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     display: flex;
 }
 
-nav ul li {
-    margin-left: 1rem;
+header nav ul li {
+    margin-left: 1.5rem;
 }
 
-nav ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.menu-toggle {
+    display: none;
 }
 
-main {
-    padding: 2rem;
+.hero {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.hero-text h2 {
+    color: #003366;
 }
 
 .section {
-    display: none;
     padding: 2rem;
-    color: #fff;
 }
 
-.section.active {
-    display: block;
-}
-
-#home {
-    background-image: url('template1.jpg'); /* Background image for home section */
-    background-size: cover;
-    background-position: center;
-}
-
-#about {
-    background-image: url('about-bg.jpg'); /* Background image for about section */
-    background-size: cover;
-    background-position: center;
-}
-
-#services {
-    background-image: url('services-bg.jpg'); /* Background image for services section */
-    background-size: cover;
-    background-position: center;
-}
-
-#gallery {
-    background-image: url('gallery-bg.jpg'); /* Background image for gallery section */
-    background-size: cover;
-    background-position: center;
-}
-
-#contact {
-    background-image: url('contact-bg.jpg'); /* Background image for contact section */
-    background-size: cover;
-    background-position: center;
-}
-
-button {
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.about-info {
-    list-style-type: none;
-    margin-top: 1rem;
-}
-
-.about-info li {
-    margin-bottom: 0.5rem;
-}
-
-.service-icons {
+.categories {
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
 }
 
-.service-icons div {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: center;
-    width: 30%;
+.category h3 {
+    color: #003366;
+}
+
+.category ul {
+    list-style-type: none;
+    margin-top: 0.5rem;
 }
 
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    margin-top: 1rem;
 }
 
 .gallery-grid img {
     width: 100%;
-    height: auto;
     border-radius: 5px;
 }
 
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: #003366;
     color: #fff;
     text-align: center;
     padding: 1rem;
-    background-image: url('footer-bg.jpg'); /* Add background image to footer */
-    background-size: cover;
-    background-position: center;
 }
