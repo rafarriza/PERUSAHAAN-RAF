@@ -15,7 +15,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #333;
+    background-image: url('header-bg.jpg'); /* Add background image to header */
+    background-size: cover;
+    background-position: center;
     color: #fff;
 }
 
@@ -49,20 +51,42 @@ main {
 
 .section {
     display: none;
+    padding: 2rem;
+    color: #fff;
 }
 
 .section.active {
     display: block;
 }
 
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+#home {
+    background-image: url('home-bg.jpg'); /* Background image for home section */
+    background-size: cover;
+    background-position: center;
 }
 
-.section p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+#about {
+    background-image: url('about-bg.jpg'); /* Background image for about section */
+    background-size: cover;
+    background-position: center;
+}
+
+#services {
+    background-image: url('services-bg.jpg'); /* Background image for services section */
+    background-size: cover;
+    background-position: center;
+}
+
+#gallery {
+    background-image: url('gallery-bg.jpg'); /* Background image for gallery section */
+    background-size: cover;
+    background-position: center;
+}
+
+#contact {
+    background-image: url('contact-bg.jpg'); /* Background image for contact section */
+    background-size: cover;
+    background-position: center;
 }
 
 button {
@@ -94,7 +118,7 @@ button:hover {
 }
 
 .service-icons div {
-    background-color: #eee;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     border-radius: 5px;
     text-align: center;
@@ -119,4 +143,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+    background-image: url('footer-bg.jpg'); /* Add background image to footer */
+    background-size: cover;
+    background-position: center;
 }
