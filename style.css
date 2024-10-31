@@ -92,7 +92,7 @@ header nav ul li a {
 /* Gallery styles */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for responsiveness */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
@@ -101,6 +101,7 @@ header nav ul li a {
     height: auto; /* Ensure the image retains its aspect ratio */
     border-radius: 5px;
 }
+
 
 
 /* Footer */
