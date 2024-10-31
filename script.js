@@ -1,6 +1,8 @@
-function showSection(sectionId) {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => section.classList.remove('active'));
-    
-    document.getElementById(sectionId).classList.add('active');
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("header nav ul");
+
+    menuToggle.addEventListener("click", function() {
+        nav.classList.toggle("active");
+    });
+});
